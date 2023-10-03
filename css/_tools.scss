@@ -1,0 +1,27 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500;800&display=swap");
+
+// Variables
+$light: #fff;
+$primary: #fea116;
+$secondary: #666565;
+$dark: #0f172b;
+
+.container {
+	max-width: 1240px;
+	display: block;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+body {
+	font-family: "Heebo", sans-serif;
+	font-weight: 400;
+}
+
+// font-family: 'Heebo', sans-serif;
+// font-family: 'Pacifico', cursive;
+// font-family: 'Nunito', sans-serif;
