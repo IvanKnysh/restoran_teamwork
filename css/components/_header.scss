@@ -1,0 +1,84 @@
+.header {
+	padding-top: 20px;
+	padding-bottom: 96px;
+	background: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)),
+		url("../../images/bg-hero.jpeg") center/cover;
+	.nav {
+		display: flex;
+		align-items: center;
+		.logo {
+			display: flex;
+			align-items: center;
+			img {
+				display: block;
+				height: 40px;
+				margin-right: 16px;
+			}
+			span {
+				display: block;
+				font-family: "Nunito", sans-serif;
+				font-weight: 800;
+				font-size: 40px;
+				color: $primary;
+			}
+		}
+		ul {
+			display: flex;
+			margin-left: auto;
+			margin-right: 25px;
+			gap: 0 25px;
+			li {
+				a {
+					font-size: 15px;
+					text-transform: uppercase;
+					color: $light;
+					text-decoration: none;
+					font-weight: 500;
+				}
+			}
+		}
+		a.book {
+			@include button(165px, 42px);
+		}
+	}
+	.content {
+		display: flex;
+		align-items: center;
+		gap: 0 50px;
+		padding-top: 100px;
+		.block {
+			width: 50%;
+			h1 {
+				font-family: "Nunito", sans-serif;
+				font-weight: 800;
+				color: $light;
+				font-size: 64px;
+				line-height: 77px;
+				margin-bottom: 20px;
+			}
+			p {
+				font-size: 16px;
+				color: $light;
+				line-height: 24px;
+				margin-bottom: 30px;
+			}
+			a {
+				@include button(215px, 58px);
+			}
+			img {
+				display: block;
+				width: 100%;
+				animation: rotate 30s linear infinite;
+			}
+		}
+	}
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
