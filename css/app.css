@@ -27,7 +27,7 @@ body {
 .header {
   padding-top: 20px;
   padding-bottom: 96px;
-  background: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)), url("../../images/bg-hero.jpeg") center/cover;
+  background: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)), url("../images/bg-hero.jpeg") center/cover;
 }
 .header .nav {
   display: flex;
@@ -63,6 +63,9 @@ body {
   font-weight: 500;
   transition: 0.3s;
 }
+.header .nav ul li a.active {
+  color: #fea116;
+}
 .header .nav ul li a:hover {
   color: #fea116;
 }
@@ -87,6 +90,14 @@ body {
 .header .nav a.book:active {
   box-shadow: 0 0 0 0.25rem rgba(216, 137, 19, 0.5);
 }
+.header h1 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  color: #fff;
+  font-size: 64px;
+  line-height: 77px;
+  margin-bottom: 20px;
+}
 .header .content {
   display: flex;
   align-items: center;
@@ -95,14 +106,6 @@ body {
 }
 .header .content .block {
   width: 50%;
-}
-.header .content .block h1 {
-  font-family: "Nunito", sans-serif;
-  font-weight: 800;
-  color: #fff;
-  font-size: 64px;
-  line-height: 77px;
-  margin-bottom: 20px;
 }
 .header .content .block p {
   font-size: 16px;
@@ -135,6 +138,23 @@ body {
   display: block;
   width: 100%;
   animation: rotate 30s linear infinite;
+}
+.header .content-page {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.header .content-page h1 {
+  text-align: center;
+}
+.header .content-page .pagin {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fea116;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+.header .content-page .pagin span {
+  color: #fff;
 }
 
 @keyframes rotate {
@@ -182,7 +202,7 @@ body {
   text-decoration: none;
   font-family: "Nunito", sans-serif;
   font-weight: 400;
-  background: url("../../images/footer-arrow-right.svg") no-repeat 0 50%;
+  background: url("../images/footer-arrow-right.svg") no-repeat 0 50%;
   background-size: 6px;
   padding-left: 15px;
   transition: 0.3s;
@@ -200,15 +220,15 @@ body {
   margin-bottom: 8px;
 }
 .footer .flx-wrapper .flx-item .contact.address {
-  background: url("../../images/footer-map.svg") no-repeat 0 50%;
+  background: url("../images/footer-map.svg") no-repeat 0 50%;
   background-size: 12px;
 }
 .footer .flx-wrapper .flx-item .contact.phone {
-  background: url("../../images/footer-phone.svg") no-repeat 0 50%;
+  background: url("../images/footer-phone.svg") no-repeat 0 50%;
   background-size: 14px;
 }
 .footer .flx-wrapper .flx-item .contact.email {
-  background: url("../../images/footer-email.svg") no-repeat 0 50%;
+  background: url("../images/footer-email.svg") no-repeat 0 50%;
   background-size: 14px;
 }
 .footer .flx-wrapper .flx-item .contact:nth-last-child(1) {

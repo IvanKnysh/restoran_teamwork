@@ -2,7 +2,7 @@
 	padding-top: 20px;
 	padding-bottom: 96px;
 	background: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)),
-		url("../../images/bg-hero.jpeg") center/cover;
+		url("../images/bg-hero.jpeg") center/cover;
 	.nav {
 		display: flex;
 		align-items: center;
@@ -35,6 +35,9 @@
 					text-decoration: none;
 					font-weight: 500;
 					transition: 0.3s;
+					&.active {
+						color: $primary;
+					}
 					&:hover {
 						color: $primary;
 					}
@@ -45,6 +48,14 @@
 			@include button(165px, 42px);
 		}
 	}
+	h1 {
+		font-family: "Nunito", sans-serif;
+		font-weight: 800;
+		color: $light;
+		font-size: 64px;
+		line-height: 77px;
+		margin-bottom: 20px;
+	}
 	.content {
 		display: flex;
 		align-items: center;
@@ -52,14 +63,6 @@
 		padding-top: 100px;
 		.block {
 			width: 50%;
-			h1 {
-				font-family: "Nunito", sans-serif;
-				font-weight: 800;
-				color: $light;
-				font-size: 64px;
-				line-height: 77px;
-				margin-bottom: 20px;
-			}
 			p {
 				font-size: 16px;
 				color: $light;
@@ -73,6 +76,23 @@
 				display: block;
 				width: 100%;
 				animation: rotate 30s linear infinite;
+			}
+		}
+	}
+	.content-page {
+		padding-top: 70px;
+		padding-bottom: 70px;
+		h1 {
+			text-align: center;
+		}
+		.pagin {
+			text-align: center;
+			text-transform: uppercase;
+			color: $primary;
+			font-size: 16px;
+			letter-spacing: 0.5px;
+			span {
+				color: $light;
 			}
 		}
 	}
