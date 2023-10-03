@@ -6,6 +6,7 @@
 // Variables
 $light: #fff;
 $primary: #fea116;
+$primary-hover: #feaf39;
 $secondary: #666565;
 $dark: #0f172b;
 
@@ -39,6 +40,9 @@ body {
 	text-align: center;
 	line-height: $height;
 	transition: 0.3s;
+	&:hover {
+		background-color: $primary-hover;
+	}
 	&:active {
 		box-shadow: 0 0 0 0.25rem rgba(216, 137, 19, 0.5);
 	}

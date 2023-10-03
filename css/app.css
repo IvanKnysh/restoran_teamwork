@@ -81,6 +81,9 @@ body {
   line-height: 42px;
   transition: 0.3s;
 }
+.header .nav a.book:hover {
+  background-color: #feaf39;
+}
 .header .nav a.book:active {
   box-shadow: 0 0 0 0.25rem rgba(216, 137, 19, 0.5);
 }
@@ -121,6 +124,9 @@ body {
   text-align: center;
   line-height: 58px;
   transition: 0.3s;
+}
+.header .content .block a:hover {
+  background-color: #feaf39;
 }
 .header .content .block a:active {
   box-shadow: 0 0 0 0.25rem rgba(216, 137, 19, 0.5);
