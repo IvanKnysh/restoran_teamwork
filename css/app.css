@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
   max-width: 1240px;
   display: block;
@@ -18,4 +22,116 @@
 body {
   font-family: "Heebo", sans-serif;
   font-weight: 400;
+}
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 96px;
+  background: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)), url("../../images/bg-hero.jpeg") center/cover;
+}
+.header .nav {
+  display: flex;
+  align-items: center;
+}
+.header .nav .logo {
+  display: flex;
+  align-items: center;
+}
+.header .nav .logo img {
+  display: block;
+  height: 40px;
+  margin-right: 16px;
+}
+.header .nav .logo span {
+  display: block;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  color: #fea116;
+}
+.header .nav ul {
+  display: flex;
+  margin-left: auto;
+  margin-right: 25px;
+  gap: 0 25px;
+}
+.header .nav ul li a {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.header .nav a.book {
+  width: 165px;
+  height: 42px;
+  display: block;
+  text-decoration: none;
+  background-color: #fea116;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 42px;
+  transition: 0.3s;
+}
+.header .nav a.book:active {
+  box-shadow: 0 0 0 0.25rem rgba(216, 137, 19, 0.5);
+}
+.header .content {
+  display: flex;
+  align-items: center;
+  gap: 0 50px;
+  padding-top: 100px;
+}
+.header .content .block {
+  width: 50%;
+}
+.header .content .block h1 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  color: #fff;
+  font-size: 64px;
+  line-height: 77px;
+  margin-bottom: 20px;
+}
+.header .content .block p {
+  font-size: 16px;
+  color: #fff;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+.header .content .block a {
+  width: 215px;
+  height: 58px;
+  display: block;
+  text-decoration: none;
+  background-color: #fea116;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 58px;
+  transition: 0.3s;
+}
+.header .content .block a:active {
+  box-shadow: 0 0 0 0.25rem rgba(216, 137, 19, 0.5);
+}
+.header .content .block img {
+  display: block;
+  width: 100%;
+  animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=app.css.map */
