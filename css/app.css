@@ -144,4 +144,142 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+.footer {
+  background-color: #0f172b;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+.footer .flx-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .flx-wrapper .flx-item h3 {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Pacifico", cursive;
+  color: #fea116;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.footer .flx-wrapper .flx-item h3:after {
+  position: absolute;
+  top: 50%;
+  right: -60px;
+  transform: translateY(-50%);
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #fea116;
+}
+.footer .flx-wrapper .flx-item ul li {
+  margin-bottom: 5px;
+}
+.footer .flx-wrapper .flx-item ul li a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  background: url("../../images/footer-arrow-right.svg") no-repeat 0 50%;
+  background-size: 6px;
+  padding-left: 15px;
+  transition: 0.3s;
+}
+.footer .flx-wrapper .flx-item ul li a:hover {
+  letter-spacing: 1px;
+}
+.footer .flx-wrapper .flx-item ul li:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.footer .flx-wrapper .flx-item .contact {
+  color: #fff;
+  font-size: 16px;
+  padding-left: 30px;
+  margin-bottom: 8px;
+}
+.footer .flx-wrapper .flx-item .contact.address {
+  background: url("../../images/footer-map.svg") no-repeat 0 50%;
+  background-size: 12px;
+}
+.footer .flx-wrapper .flx-item .contact.phone {
+  background: url("../../images/footer-phone.svg") no-repeat 0 50%;
+  background-size: 14px;
+}
+.footer .flx-wrapper .flx-item .contact.email {
+  background: url("../../images/footer-email.svg") no-repeat 0 50%;
+  background-size: 14px;
+}
+.footer .flx-wrapper .flx-item .contact:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.footer .flx-wrapper .flx-item .opening {
+  color: #fff;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+.footer .flx-wrapper .flx-item .opening span {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+}
+.footer .flx-wrapper .flx-item .opening:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.footer .flx-wrapper .flx-item .description {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.footer .flx-wrapper .flx-item form {
+  position: relative;
+  width: 100%;
+}
+.footer .flx-wrapper .flx-item form input {
+  width: 100%;
+  height: 58px;
+  border: 1px solid #fea116;
+  outline: none;
+  border-radius: 2px;
+  padding: 0 15px;
+  font-size: 16px;
+  font-family: "Heebo", sans-serif;
+  box-sizing: border-box;
+  transition: 0.3s;
+  padding-right: 100px;
+}
+.footer .flx-wrapper .flx-item form input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(216, 137, 19, 0.5);
+}
+.footer .flx-wrapper .flx-item form button {
+  width: 85px;
+  height: 42px;
+  display: block;
+  text-decoration: none;
+  background-color: #fea116;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 42px;
+  transition: 0.3s;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Heebo", sans-serif;
+}
+.footer .flx-wrapper .flx-item form button:hover {
+  background-color: #feaf39;
+}
+.footer .flx-wrapper .flx-item form button:active {
+  box-shadow: 0 0 0 0.25rem rgba(216, 137, 19, 0.5);
 }/*# sourceMappingURL=app.css.map */
