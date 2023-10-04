@@ -374,6 +374,9 @@ body {
 .services .row {
   padding: 20px 0;
 }
+.services .row .col svg {
+  height: 50px;
+}
 
 .footer {
   background-color: #0f172b;
