@@ -11,8 +11,18 @@
     .row {
         padding: 20px 0;
         .col {
+            margin: 0 20px;
+            padding: 40px 25px 25px;
             svg {
+                margin-bottom: 25px;
                 height: 50px;
+                fill: #fea116;
+            }
+            h5 {
+                padding-bottom: 8px;
+            }
+            p {
+                padding-bottom: 15px;
             }
         }
     }

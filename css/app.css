@@ -374,8 +374,20 @@ body {
 .services .row {
   padding: 20px 0;
 }
+.services .row .col {
+  margin: 0 20px;
+  padding: 40px 25px 25px;
+}
 .services .row .col svg {
+  margin-bottom: 25px;
   height: 50px;
+  fill: #fea116;
+}
+.services .row .col h5 {
+  padding-bottom: 8px;
+}
+.services .row .col p {
+  padding-bottom: 15px;
 }
 
 .footer {
