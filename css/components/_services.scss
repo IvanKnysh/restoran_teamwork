@@ -17,17 +17,32 @@
             svg {
                 margin-bottom: 25px;
                 height: 50px;
+                transition: .5s;
                 fill: $primary;
             }
             h5 {
                 padding-bottom: 8px;
+                transition: .5s;
             }
             p {
                 padding-bottom: 15px;
+                transition: 2.5s;
             }
             &:hover {
                 transition: .5s;
                 background-color: $primary-hover;
+                svg {
+                    transition: .5s;
+                    fill: $light;
+                }
+                h5 {
+                    transition: .5s;
+                    color: $light;
+                }
+                p {
+                    transition: .5s;
+                    color: $light;
+                }
             }
         }
     }
