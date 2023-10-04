@@ -371,6 +371,9 @@ body {
   line-height: 48px;
   margin-bottom: 40px;
 }
+.services .row {
+  padding: 20px 0;
+}
 
 .footer {
   background-color: #0f172b;
