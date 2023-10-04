@@ -1,0 +1,15 @@
+
+.flx-team-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.media-img {
+    inline-size: 5%;
+}
+
+.flx-team-item {
+    flex: 0 0 25%;
+    max-width: 25%;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+}
