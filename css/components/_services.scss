@@ -13,6 +13,7 @@
         .col {
             margin: 0 20px;
             padding: 40px 25px 25px;
+            transition: .5s;
             svg {
                 margin-bottom: 25px;
                 height: 50px;
@@ -25,6 +26,7 @@
                 padding-bottom: 15px;
             }
             &:hover {
+                transition: .5s;
                 background-color: $primary-hover;
             }
         }
