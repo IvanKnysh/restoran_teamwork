@@ -156,6 +156,19 @@ body {
 .header .content-page .pagin span {
   color: #fff;
 }
+.header.active-header {
+  padding-top: 75px;
+}
+.header.active-header .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #0f172b;
+  box-shadow: 0 0 5px 0 #0f172b;
+  padding: 10px 20px;
+  z-index: 10;
+}
 
 @keyframes rotate {
   from {

@@ -96,6 +96,20 @@
 			}
 		}
 	}
+
+	&.active-header {
+		padding-top: 75px;
+		.nav {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			background-color: $dark;
+			box-shadow: 0 0 5px 0 $dark;
+			padding: 10px 20px;
+			z-index: 10;
+		}
+	}
 }
 
 @keyframes rotate {
