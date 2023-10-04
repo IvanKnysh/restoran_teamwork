@@ -1,0 +1,11 @@
+.services {
+        padding: 100px 0;
+    .title-wrap {
+        h2 {
+            @include primary-title;
+        }
+        h3 {
+            @include secondaty-title;
+        }
+    }
+}
