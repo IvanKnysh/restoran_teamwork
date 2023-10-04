@@ -9,7 +9,7 @@ if (document.querySelector(".gallery")) {
 }
 
 // Nav menu
-window.addEventListener("scroll", (e) => {
+window.addEventListener("scroll", () => {
 	if (window.scrollY > 120) {
 		document.querySelector(".header").classList.add("active-header");
 	} else {
