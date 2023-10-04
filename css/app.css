@@ -377,6 +377,7 @@ body {
 .services .row .col {
   margin: 0 20px;
   padding: 40px 25px 25px;
+  transition: 0.5s;
 }
 .services .row .col svg {
   margin-bottom: 25px;
@@ -390,6 +391,7 @@ body {
   padding-bottom: 15px;
 }
 .services .row .col:hover {
+  transition: 0.5s;
   background-color: #feaf39;
 }
 
