@@ -1,15 +1,98 @@
+.our-team {
+    .container {
 
-.flx-team-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-}
+        .team-title {
+            .mb {
+                font-family: 'Pacifico', cursive;
+                font-size: 1.25rem;
+                position: relative;
+                display: inline-block;
+                color: $primary;
+                margin-top: 50px;
+            }
 
-.media-img {
-    inline-size: 5%;
-}
+            .mb::before,
+            .mb::after {
+                position: absolute;
+                content: "";
+                width: 45px;
+                height: 2px;
+                top: 50%;
+                margin-top: -1px;
+                background: $primary;
+            }
 
-.flx-team-item {
-    flex: 0 0 25%;
-    max-width: 25%;
-    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+            .mb::before {
+                left: -55px;
+            }
+
+            .mb::after {
+                right: -55px;
+            }
+
+            .text-center {
+                text-align: center;
+            }
+
+            .mb-sub {
+                font-size: 2.5rem;
+                font-family: 'Nunito', sans-serif;
+                margin-bottom: 50px;
+            }
+        }
+
+        .flx-team-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .flx-team-item {
+                flex: 0 0 auto;
+                width: 25%;
+                box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+
+                .team-item-content {
+                    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+                    height: calc(100% - 38px);
+                    transition: .5s;
+                    border-radius: 2px;
+                    text-align: center;
+                    overflow: hidden;
+
+                    .rounded-circle {
+                        border-radius: 50%;
+                        margin: 1.5rem;
+                        overflow: hidden;
+
+                        .img-fluid {
+                            transition: .5s;
+                            vertical-align: middle;
+                            overflow-clip-margin: content-box;
+                            overflow: clip;
+                            max-width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                    .fn {
+                        margin-top: 0;
+                        margin-bottom: 0.5rem;
+                        font-family: "Nunito", sans-serif;
+                        font-weight: 800;
+                        line-height: 1.2;
+                        color: #0F172B;
+                    }
+
+                    .small {
+                        font-size: smaller;
+
+                    }
+
+                    .media-img {
+                        inline-size: 5%;
+                    }
+                }
+            }
+        }
+    }
 }
