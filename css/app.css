@@ -391,10 +391,11 @@ body {
 }
 .services .row .col p {
   padding-bottom: 15px;
-  transition: 2.5s;
+  transition: 2.5s ease-in;
 }
 .services .row .col:hover {
   transition: 0.5s;
+  border-radius: 2px;
   background-color: #feaf39;
 }
 .services .row .col:hover svg {

@@ -26,10 +26,11 @@
             }
             p {
                 padding-bottom: 15px;
-                transition: 2.5s;
+                transition: 2.5s ease-in;
             }
             &:hover {
                 transition: .5s;
+                border-radius: 2px;
                 background-color: $primary-hover;
                 svg {
                     transition: .5s;
