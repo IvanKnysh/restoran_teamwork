@@ -260,13 +260,26 @@ body {
 .food-menu .container .menu-tabs .tabs li.active {
   border-bottom: 2px solid #fea116;
 }
+.food-menu .container .menu-tabs .tabs li.active a {
+  padding-bottom: 13px;
+}
+.food-menu .container .menu-tabs .tabs-content {
+  position: relative;
+}
 .food-menu .container .menu-tabs .tabs-content .tab-item {
-  display: none;
+  display: flex;
   flex-wrap: wrap;
   gap: 2%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
 }
 .food-menu .container .menu-tabs .tabs-content .tab-item.active {
-  display: flex;
+  position: relative;
+  opacity: 1;
+  z-index: 1;
 }
 .food-menu .container .menu-tabs .tabs-content .tab-item .menu-item {
   width: 49%;

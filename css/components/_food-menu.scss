@@ -48,17 +48,28 @@
                     }
                     &.active {
                         border-bottom: 2px solid $primary;
+                        a {
+                            padding-bottom: 13px;
+                        }
                     }
                 }
             }
 
             .tabs-content {
+                position: relative;
                 .tab-item {
-                    display: none;
+                    display: flex;
                     flex-wrap: wrap;
                     gap: 2%;
+                    position: absolute;
+                    top: 0;
+                    opacity: 0;
+                    z-index: -1;
+                    transition: all 0.5s;
                     &.active {
-                        display: flex;
+                        position: relative;
+                        opacity: 1;
+                        z-index: 1;
                     }
                     .menu-item {
                         width: calc(98%/2);
