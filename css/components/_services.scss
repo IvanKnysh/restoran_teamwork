@@ -14,6 +14,7 @@
         .col {
             margin: 0 12px;
             padding: 40px 25px 25px;
+            box-shadow: 0 0 45px rgba(0, 0, 0, .08);
             transition: .5s;
             .icon-wrap {
                 position: relative;
@@ -45,15 +46,13 @@
             }
             p {
                 padding-bottom: 15px;
-                transition: 2.5s;
+                transition: .5s;
             }
             &:hover {
-                transition: .5s;
                 border-radius: 2px;
                 background-color: $primary-hover;
                 .icon-wrap {
                     svg {
-                        transition: .5s;
                         fill: $light;
                     }
                 }
@@ -73,11 +72,9 @@
                     }
                 }
                 h5 {
-                    transition: .5s;
                     color: $light;
                 }
                 p {
-                    transition: .5s;
                     color: $light;
                 }
             }
