@@ -1,0 +1,107 @@
+.food-menu {
+    padding: 100px 0;
+    .container {
+        .food-menu-heading {
+            h2 {
+                @include primary-title;
+            }
+            h3 {
+                @include secondaty-title;
+            }
+        }
+        .menu-tabs {
+            .tabs {
+                width: fit-content;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                margin-bottom: 50px;
+                border-bottom: 1px solid #dee2e6;
+                li {
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 15px;
+                        text-decoration: none;
+                        padding-bottom: 15px;
+                        img {
+                            height: 35px;
+                            width: 35px;
+                        }
+                        .tabs-text {
+                            font-family: 'Nunito', sans-serif;
+                            font-size: 16px;
+                            line-height: 19px;
+                            font-weight: 800;
+                            color: $dark;
+                            .secondary-text {
+                                display: block;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 21px;
+                                color: #666565;
+                            }
+                        }
+                    }
+                    &.active {
+                        border-bottom: 2px solid $primary;
+                    }
+                }
+            }
+
+            .tabs-content {
+                .tab-item {
+                    display: none;
+                    flex-wrap: wrap;
+                    gap: 2%;
+                    &.active {
+                        display: flex;
+                    }
+                    .menu-item {
+                        width: calc(98%/2);
+                        display: flex;
+                        align-items: center;
+                        gap: 30px;
+                        margin-bottom: 20px;
+                        .menu-descriptin {
+                            width: 90%;
+                            font-family: 'Nunito', sans-serif;
+                            font-weight: 800;
+                            font-size: 20px;
+                            line-height: 24px;
+                            .food-name {
+                                display: flex;
+                                justify-content: space-between;
+                                border-bottom: 1px solid #dee2e6;
+                                color: $dark;
+                                padding-bottom: 8px;
+                                .price {
+                                    color: $primary;
+                                }
+                            }
+                            .food-descriptin {
+                                display: block;
+                                color: #666565;
+                                font-family: "Heebo", sans-serif;
+                                font-size: 14px;
+                                line-height: 21px;
+                                font-style: italic;
+                                font-weight: 400;
+                                padding-top: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+            // div[id^=tab]:not(:target) {
+            //     display: none;
+            // }
+            // div[id^=tab]:target {
+            //     display: flex;
+            // }
+        }
+    }
+}

@@ -178,6 +178,131 @@ body {
     transform: rotate(360deg);
   }
 }
+.food-menu {
+  padding: 100px 0;
+}
+.food-menu .container .food-menu-heading h2 {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 10px;
+  color: #fea116;
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
+}
+.food-menu .container .food-menu-heading h2:before {
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  transform: translateY(-50%);
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #fea116;
+}
+.food-menu .container .food-menu-heading h2:after {
+  position: absolute;
+  top: 50%;
+  right: -60px;
+  transform: translateY(-50%);
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #fea116;
+}
+.food-menu .container .food-menu-heading h3 {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  line-height: 48px;
+  margin-bottom: 40px;
+}
+.food-menu .container .menu-tabs .tabs {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #dee2e6;
+}
+.food-menu .container .menu-tabs .tabs li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  padding-bottom: 15px;
+}
+.food-menu .container .menu-tabs .tabs li a img {
+  height: 35px;
+  width: 35px;
+}
+.food-menu .container .menu-tabs .tabs li a .tabs-text {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 800;
+  color: #0f172b;
+}
+.food-menu .container .menu-tabs .tabs li a .tabs-text .secondary-text {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #666565;
+}
+.food-menu .container .menu-tabs .tabs li.active {
+  border-bottom: 2px solid #fea116;
+}
+.food-menu .container .menu-tabs .tabs-content .tab-item {
+  display: none;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+.food-menu .container .menu-tabs .tabs-content .tab-item.active {
+  display: flex;
+}
+.food-menu .container .menu-tabs .tabs-content .tab-item .menu-item {
+  width: 49%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.food-menu .container .menu-tabs .tabs-content .tab-item .menu-item .menu-descriptin {
+  width: 90%;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+}
+.food-menu .container .menu-tabs .tabs-content .tab-item .menu-item .menu-descriptin .food-name {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dee2e6;
+  color: #0f172b;
+  padding-bottom: 8px;
+}
+.food-menu .container .menu-tabs .tabs-content .tab-item .menu-item .menu-descriptin .food-name .price {
+  color: #fea116;
+}
+.food-menu .container .menu-tabs .tabs-content .tab-item .menu-item .menu-descriptin .food-descriptin {
+  display: block;
+  color: #666565;
+  font-family: "Heebo", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-style: italic;
+  font-weight: 400;
+  padding-top: 5px;
+}
+
 .about-us {
   padding-top: 100px;
   padding-bottom: 100px;
