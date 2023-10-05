@@ -65,9 +65,9 @@
                         overflow: hidden;
 
                         .img-fluid {
-                            transition: .5s;
+                            transition: .10s;
                             vertical-align: middle;
-                            overflow-clip-margin: content-box;
+                            overflow-clip-margin:inherit;
                             overflow: clip;
                             max-width: 100%;
                             height: auto;
@@ -79,6 +79,7 @@
                         margin-bottom: 0.5rem;
                         font-family: "Nunito", sans-serif;
                         font-weight: 800;
+                        font-size: 1.25rem;
                         line-height: 1.2;
                         color: #0F172B;
                     }
