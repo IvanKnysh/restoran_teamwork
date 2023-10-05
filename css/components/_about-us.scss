@@ -1,0 +1,103 @@
+.about-us {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	.flx-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.flx-item {
+			width: calc(50% - 20px);
+			h2 {
+				@include primary-title;
+				text-align: left;
+				margin-left: initial;
+				&:before {
+					display: none;
+				}
+			}
+			h3 {
+				@include secondaty-title;
+				text-align: left;
+				display: flex;
+				align-items: center;
+				img {
+					display: block;
+					height: 40px;
+					margin: 0 10px;
+				}
+			}
+			p {
+				font-size: 16px;
+				color: $secondary;
+				line-height: 24px;
+				margin-bottom: 20px;
+			}
+			a.read-more {
+				@include button(192px, 58px);
+			}
+			.info {
+				display: flex;
+				justify-content: space-between;
+				.info-item {
+					width: calc((100% / 2) - 10px);
+					display: flex;
+					align-items: center;
+					flex-wrap: wrap;
+					border-left: 5px solid $primary;
+					margin-bottom: 40px;
+					.count {
+						color: $primary;
+						font-family: "Nunito", sans-serif;
+						font-weight: 800;
+						font-size: 48px;
+						line-height: 58px;
+						margin-right: 20px;
+						padding-left: 20px;
+					}
+					.text-content {
+						span {
+							display: block;
+							color: $secondary;
+							font-size: 16px;
+							line-height: 24px;
+							&.bold-txt {
+								font-family: "Nunito", sans-serif;
+								font-weight: 800;
+								color: $dark;
+							}
+						}
+					}
+				}
+			}
+			.gallery {
+				display: flex;
+				flex-wrap: wrap;
+				.gallery-row {
+					width: 100%;
+					display: flex;
+					gap: 20px;
+					margin-bottom: 20px;
+					a {
+						img {
+							display: block;
+							&.big {
+								max-width: 285px;
+							}
+							&.small {
+								max-width: 220px;
+							}
+						}
+					}
+					&:nth-child(1) {
+						align-items: flex-end;
+						justify-content: flex-start;
+					}
+					&:nth-child(2) {
+						align-items: flex-start;
+						justify-content: flex-end;
+					}
+				}
+			}
+		}
+	}
+}
