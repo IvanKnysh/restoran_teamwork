@@ -407,7 +407,7 @@ body {
 }
 .services .row .col p {
   padding-bottom: 15px;
-  transition: 2.5s ease-in;
+  transition: 2.5s;
 }
 .services .row .col:hover {
   transition: 0.5s;
