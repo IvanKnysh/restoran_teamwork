@@ -379,11 +379,27 @@ body {
   padding: 40px 25px 25px;
   transition: 0.5s;
 }
-.services .row .col svg {
+.services .row .col .icon-wrap {
+  position: relative;
+}
+.services .row .col .icon-wrap svg {
   margin-bottom: 25px;
   height: 50px;
   transition: 0.5s;
   fill: #fea116;
+}
+.services .row .col .icon--mod-wrap::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 32px;
+  border: 1px dotted #fea116;
+  width: 3px;
+  height: 3px;
+  background-color: #fff;
+  box-sizing: border-box;
+  transform: scale(7, 6);
+  transition: 0.5s;
 }
 .services .row .col h5 {
   padding-bottom: 8px;
@@ -398,9 +414,22 @@ body {
   border-radius: 2px;
   background-color: #feaf39;
 }
-.services .row .col:hover svg {
+.services .row .col:hover .icon-wrap svg {
   transition: 0.5s;
   fill: #fff;
+}
+.services .row .col:hover .icon--mod-wrap::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 32px;
+  border: 1px dotted #fff;
+  width: 3px;
+  height: 3px;
+  background-color: #fea116;
+  box-sizing: border-box;
+  transform: scale(7, 6);
+  transition: 0.5s;
 }
 .services .row .col:hover h5 {
   transition: 0.5s;

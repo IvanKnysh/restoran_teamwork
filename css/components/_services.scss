@@ -14,11 +14,29 @@
             margin: 0 20px;
             padding: 40px 25px 25px;
             transition: .5s;
-            svg {
-                margin-bottom: 25px;
-                height: 50px;
-                transition: .5s;
-                fill: $primary;
+            .icon-wrap {
+                position: relative;
+                svg {
+                    margin-bottom: 25px;
+                    height: 50px;
+                    transition: .5s;
+                    fill: $primary;
+                }
+            }
+            .icon--mod-wrap {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 17px;
+                    left: 32px;
+                    border: 1px dotted $primary;
+                    width: 3px;
+                    height: 3px;
+                    background-color: $light;
+                    box-sizing: border-box;
+                    transform: scale(7, 6);
+                    transition: 0.5s;
+                }
             }
             h5 {
                 padding-bottom: 8px;
@@ -32,9 +50,26 @@
                 transition: .5s;
                 border-radius: 2px;
                 background-color: $primary-hover;
-                svg {
-                    transition: .5s;
-                    fill: $light;
+                .icon-wrap {
+                    svg {
+                        transition: .5s;
+                        fill: $light;
+                    }
+                }
+                .icon--mod-wrap {
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 17px;
+                        left: 32px;
+                        border: 1px dotted $light;
+                        width: 3px;
+                        height: 3px;
+                        background-color: $primary;
+                        box-sizing: border-box;
+                        transform: scale(7, 6);
+                        transition: 0.5s;
+                    }
                 }
                 h5 {
                     transition: .5s;
