@@ -1,0 +1,69 @@
+.contacts {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	h2 {
+		@include primary-title;
+	}
+	h3 {
+		@include secondaty-title;
+	}
+	.flx-wrapper {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 48px;
+		.flx-item {
+			h4 {
+				@include primary-title;
+				text-align: left;
+				margin: 0 0 8px;
+				&:before {
+					display: none;
+				}
+			}
+			h5 {
+				font-size: 16px;
+				color: $secondary;
+				line-height: 24px;
+				font-weight: 400;
+				background: url("../images/contact-email.svg") no-repeat 0 50%;
+				background-size: 16px;
+				padding-left: 22px;
+			}
+		}
+	}
+	.flx-form {
+		display: flex;
+		justify-content: space-between;
+		.flx-form-item {
+			width: calc((100% / 2) - 16px);
+			iframe {
+				width: 100%;
+				height: 366px;
+				display: block;
+			}
+			.flx-input-wrapper {
+				display: flex;
+				justify-content: space-between;
+				.flx-input-item {
+					width: calc((100% / 2) - 7px);
+				}
+			}
+			input {
+				@include input(100%, 58px);
+				margin-bottom: 14px;
+			}
+			textarea {
+				@include input(100%, 150px);
+				display: block;
+				resize: none;
+				padding: 15px;
+				margin-bottom: 14px;
+			}
+			button {
+				@include button(100%, 58px);
+				border: none;
+				cursor: pointer;
+			}
+		}
+	}
+}
