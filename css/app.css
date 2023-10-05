@@ -372,6 +372,7 @@ body {
   margin-bottom: 40px;
 }
 .services .row {
+  display: flex;
   padding: 20px 0;
 }
 .services .row .col {
