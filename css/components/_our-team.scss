@@ -1,59 +1,33 @@
 .our-team {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
     .container {
 
         .team-title {
+            text-align: center;
+
             .mb {
-                font-family: 'Pacifico', cursive;
-                font-size: 1.25rem;
-                position: relative;
-                display: inline-block;
-                color: $primary;
-                margin-top: 50px;
-            }
-
-            .mb::before,
-            .mb::after {
-                position: absolute;
-                content: "";
-                width: 45px;
-                height: 2px;
-                top: 50%;
-                margin-top: -1px;
-                background: $primary;
-            }
-
-            .mb::before {
-                left: -55px;
-            }
-
-            .mb::after {
-                right: -55px;
-            }
-
-            .text-center {
-                text-align: center;
+                @include primary-title;
             }
 
             .mb-sub {
-                font-size: 2.5rem;
-                font-family: 'Nunito', sans-serif;
-                margin-bottom: 50px;
+                @include secondaty-title;
             }
         }
 
         .flx-team-wrapper {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            gap: 24px;
 
             .flx-team-item {
-                flex: 0 0 auto;
-                width: 25%;
-                box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+                width: calc((100% / 4) - 18px);
+                padding: 3px;
 
                 .team-item-content {
                     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
-                    height: calc(100% - 38px);
+                    height: calc(100% - 40px);
                     transition: .5s;
                     border-radius: 2px;
                     text-align: center;
@@ -65,12 +39,12 @@
                         overflow: hidden;
 
                         .img-fluid {
-                            transition: .10s;
                             vertical-align: middle;
-                            overflow-clip-margin:inherit;
+                            overflow-clip-margin: inherit;
                             overflow: clip;
                             max-width: 100%;
                             height: auto;
+                            transition: transform 0.3s ease;
                         }
                     }
 
@@ -85,12 +59,24 @@
                     }
 
                     .small {
-                        font-size: smaller;
+                        font-size: 12px;
+                        padding-bottom: 10px;
 
                     }
 
                     .media-img {
-                        inline-size: 5%;
+                        width: 10%;
+                        // inline-size: 5%;
+                    }
+
+                    &:hover {
+                        height: 100%;
+
+                        .rounded-circle {
+                            .img-fluid {
+                                transform: scale(1.2);
+                            }
+                        }
                     }
                 }
             }
