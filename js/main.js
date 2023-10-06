@@ -56,3 +56,11 @@ if (document.querySelector(".scroll-to-top")) {
 		window.scrollTo({ top: 0, behavior: "smooth" });
 	});
 }
+
+// Parallax scrolling
+window.addEventListener("scroll", (e) => {
+	document.documentElement.style.setProperty(
+		"--scroll-position-y",
+		window.scrollY * -0.2 + "px"
+	);
+});

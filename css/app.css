@@ -27,7 +27,9 @@ body {
 .header {
   padding-top: 20px;
   padding-bottom: 96px;
-  background: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)), url("../images/bg-hero.jpeg") center/cover;
+  background: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 23, 43, 0.9)), url("../images/bg-hero.jpeg") fixed no-repeat;
+  background-size: cover;
+  background-position: 50% var(--scroll-position-y);
 }
 .header .nav {
   display: flex;
