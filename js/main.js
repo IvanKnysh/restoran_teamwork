@@ -58,7 +58,7 @@ if (document.querySelector(".scroll-to-top")) {
 }
 
 // Parallax scrolling
-window.addEventListener("scroll", (e) => {
+window.addEventListener("scroll", () => {
 	document.documentElement.style.setProperty(
 		"--scroll-position-y",
 		window.scrollY * -0.2 + "px"
