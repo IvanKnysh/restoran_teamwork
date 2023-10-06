@@ -603,6 +603,9 @@ body {
 .booking .flx-wrapper .flx-item:nth-last-child(1) {
   padding: 48px;
 }
+.booking.booking-homepage {
+  padding-top: 0;
+}
 
 .our-team {
   padding-top: 100px;
