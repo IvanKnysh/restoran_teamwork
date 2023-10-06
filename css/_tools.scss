@@ -23,9 +23,6 @@ body {
 	font-weight: 400;
 }
 
-// font-family: 'Pacifico', cursive;
-// font-family: 'Nunito', sans-serif;
-
 @mixin button($width, $height) {
 	width: $width;
 	height: $height;
