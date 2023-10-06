@@ -983,4 +983,26 @@ body {
 }
 .footer .flx-wrapper .flx-item form button:active {
   box-shadow: 0 0 0 0.25rem rgba(216, 137, 19, 0.5);
+}
+
+.scroll-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #fea116;
+  border-radius: 2px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+  z-index: 10;
+}
+.scroll-to-top img {
+  display: block;
+  width: 12px;
+}
+.scroll-to-top:hover {
+  background-color: #feaf39;
 }/*# sourceMappingURL=app.css.map */
