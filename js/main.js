@@ -68,6 +68,7 @@ window.addEventListener("scroll", () => {
 // Init WOW
 document.addEventListener("DOMContentLoaded", function () {
 	new WOW({
+		animateClass: "animate__animated",
 		mobile: false,
 	}).init();
 });
