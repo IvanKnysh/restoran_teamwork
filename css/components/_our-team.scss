@@ -23,11 +23,10 @@
 
             .flx-team-item {
                 width: calc((100% / 4) - 18px);
-                padding: 3px;
 
                 .team-item-content {
                     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
-                    height: calc(100% - 40px);
+                    height: calc(100% - 50px);
                     transition: .5s;
                     border-radius: 2px;
                     text-align: center;
@@ -64,11 +63,28 @@
 
                     }
 
-                    .media-img {
-                        width: 10%;
-                        // inline-size: 5%;
+                    .flx-sm {
+                        padding: 10px;
+                        border-radius: 10px;
+                        padding-bottom: 0;
                     }
 
+                    .flx-sm{
+                        margin-bottom: -7px;
+                    }
+                    
+                    .flx-sm img {
+                        width: 13%;
+                        border-radius: 38px 38px 0 0;
+                        background-color: orange;
+                        margin: 3px;
+                        margin-bottom: 0;                    
+                        padding: 10px;
+                    }
+
+                    .ln-social-media{
+                        margin-bottom: 0;
+                    }
                     &:hover {
                         height: 100%;
 
