@@ -64,3 +64,10 @@ window.addEventListener("scroll", () => {
 		window.scrollY * -0.2 + "px"
 	);
 });
+
+// Init WOW
+document.addEventListener("DOMContentLoaded", function () {
+	new WOW({
+		mobile: false,
+	}).init();
+});
