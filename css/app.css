@@ -317,6 +317,9 @@ body {
   font-weight: 400;
   padding-top: 5px;
 }
+.food-menu.food-menu-homepage {
+  padding-top: 0;
+}
 
 .about-us {
   padding-top: 100px;
