@@ -4,6 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Restoran</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
 		<link rel="stylesheet" href="./css/app.css" />
 		<link rel="shortcut icon" href="./images/favicon.png" />
 		<link
@@ -68,40 +72,62 @@
 						<div class="gallery">
 							<div class="gallery-row">
 								<a href="./images/about-1.jpeg">
-									<img class="big" src="./images/about-1.jpeg" alt="about" />
+									<img
+										class="big wow animate__fadeInUp"
+										data-wow-delay="0.1s"
+										src="./images/about-1.jpeg"
+										alt="about"
+									/>
 								</a>
 								<a href="./images/about-2.jpeg">
-									<img class="small" src="./images/about-2.jpeg" alt="about" />
+									<img
+										class="small wow animate__fadeInUp"
+										data-wow-delay="0.2s"
+										src="./images/about-2.jpeg"
+										alt="about"
+									/>
 								</a>
 							</div>
 							<div class="gallery-row">
 								<a href="./images/about-3.jpeg">
-									<img class="small" src="./images/about-3.jpeg" alt="about" />
+									<img
+										class="small wow animate__fadeInUp"
+										data-wow-delay="0.3s"
+										src="./images/about-3.jpeg"
+										alt="about"
+									/>
 								</a>
 								<a href="./images/about-4.jpeg">
-									<img class="big" src="./images/about-4.jpeg" alt="about" />
+									<img
+										class="big wow animate__fadeInUp"
+										data-wow-delay="0.4s"
+										src="./images/about-4.jpeg"
+										alt="about"
+									/>
 								</a>
 							</div>
 						</div>
 					</div>
 					<div class="flx-item">
-						<h2>About Us</h2>
-						<h3>
+						<h2 class="wow animate__fadeInUp" data-wow-delay="0.1s">
+							About Us
+						</h2>
+						<h3 class="wow animate__fadeInUp" data-wow-delay="0.3s">
 							Welcome to
 							<img src="./images/logo.svg" alt="logo title" /> Restoran
 						</h3>
-						<p>
+						<p class="wow animate__fadeInUp" data-wow-delay="0.4s">
 							Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
 							diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem
 							sit.
 						</p>
-						<p>
+						<p class="wow animate__fadeInUp" data-wow-delay="0.5s">
 							Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
 							diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
 							lorem sit clita duo justo magna dolore erat amet
 						</p>
 
-						<div class="info">
+						<div class="info wow animate__fadeInUp" data-wow-delay="0.6s">
 							<div class="info-item">
 								<div class="count">15</div>
 								<div class="text-content">
@@ -118,7 +144,12 @@
 							</div>
 						</div>
 
-						<a class="read-more" href="#">Read More</a>
+						<a
+							class="read-more wow animate__fadeInUp"
+							data-wow-delay="0.7s"
+							href="#"
+							>Read More</a
+						>
 					</div>
 				</div>
 			</div>
@@ -472,7 +503,7 @@
 		<!-- Booking -->
 		<div class="booking booking-homepage">
 			<div class="container">
-				<div class="flx-wrapper">
+				<div class="flx-wrapper wow animate__fadeInUp" data-wow-delay="0.1s">
 					<div class="flx-item">
 						<img src="./images/booking-bg.jpeg" alt="booking" />
 					</div>
@@ -566,6 +597,7 @@
 		</a>
 
 		<!-- scripts -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"></script>
 		<script src="./js/main.js"></script>
 	</body>
