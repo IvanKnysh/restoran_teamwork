@@ -1,0 +1,59 @@
+.booking {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	.flx-wrapper {
+		display: flex;
+		background-color: $dark;
+		.flx-item {
+			width: calc(100% / 2);
+			img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			h2 {
+				@include primary-title;
+				text-align: left;
+				margin-left: initial;
+				&:before {
+					display: none;
+				}
+			}
+			h3 {
+				@include secondaty-title;
+				color: $light;
+				text-align: left;
+				margin-bottom: 20px;
+			}
+			.flx-input-wrapper {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				.flx-input-item {
+					width: calc((100% / 2) - 7px);
+				}
+			}
+			input,
+			select {
+				@include input(100%, 58px);
+				margin-bottom: 14px;
+			}
+			textarea {
+				@include input(100%, 100px);
+				display: block;
+				resize: none;
+				padding: 15px;
+				margin-bottom: 14px;
+			}
+			button {
+				@include button(100%, 58px);
+				border: none;
+				cursor: pointer;
+			}
+			&:nth-last-child(1) {
+				padding: 48px;
+			}
+		}
+	}
+}
