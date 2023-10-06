@@ -49,8 +49,10 @@ document.querySelectorAll(".food-menu .menu-tabs .tabs li").forEach((item) => {
 });
 
 // Scroll to top button
-document.querySelector(".scroll-to-top").addEventListener("click", (e) => {
-	e.preventDefault();
+if (document.querySelector(".scroll-to-top")) {
+	document.querySelector(".scroll-to-top").addEventListener("click", (e) => {
+		e.preventDefault();
 
-	window.scrollTo({ top: 0, behavior: "smooth" });
-});
+		window.scrollTo({ top: 0, behavior: "smooth" });
+	});
+}
