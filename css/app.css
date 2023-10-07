@@ -199,6 +199,7 @@ body {
     box-shadow: 0 0 5px 0 #0f172b;
     padding: 10px 20px;
     z-index: 10;
+    border-bottom: 1px solid #333;
   }
   .header .nav ul {
     display: flex;
@@ -211,6 +212,7 @@ body {
     flex-direction: column;
     align-items: center;
     box-shadow: 0 0 20px 0 #0f172b;
+    border-bottom: 1px solid #333;
     height: 0;
     overflow: hidden;
     opacity: 0;
