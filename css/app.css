@@ -22,6 +22,7 @@ ul {
 body {
   font-family: "Heebo", sans-serif;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 .header {
@@ -92,6 +93,9 @@ body {
 .header .nav a.book:active {
   box-shadow: 0 0 0 0.25rem rgba(216, 137, 19, 0.5);
 }
+.header .nav button {
+  display: none;
+}
 .header h1 {
   font-family: "Nunito", sans-serif;
   font-weight: 800;
@@ -108,6 +112,7 @@ body {
 }
 .header .content .block {
   width: 50%;
+  overflow: hidden;
 }
 .header .content .block p {
   font-size: 16px;
@@ -178,6 +183,132 @@ body {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 960px) {
+  .header {
+    padding-top: 75px;
+    background-position: 50% 50%;
+  }
+  .header .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #0f172b;
+    box-shadow: 0 0 5px 0 #0f172b;
+    padding: 10px 20px;
+    z-index: 10;
+  }
+  .header .nav ul {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #0f172b;
+    margin-right: 0;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 20px 0 #0f172b;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .header .nav ul li {
+    margin-bottom: 20px;
+  }
+  .header .nav ul li:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+  .header .nav ul.active {
+    top: 74px;
+    padding: 20px 0;
+    height: auto;
+    overflow: visible;
+    opacity: 1;
+  }
+  .header .nav .logo {
+    position: relative;
+    z-index: 1;
+  }
+  .header .nav a.book {
+    position: relative;
+    margin-left: auto;
+    margin-right: 20px;
+    z-index: 1;
+  }
+  .header .nav button {
+    position: relative;
+    z-index: 1;
+    display: block;
+    background: transparent;
+    border: none;
+  }
+  .header .nav button img {
+    display: block;
+    width: 30px;
+  }
+  .header .content {
+    flex-direction: column;
+  }
+  .header .content .block {
+    width: 100%;
+  }
+  .header .content .block h1 {
+    text-align: center;
+  }
+  .header .content .block h1 br {
+    display: none;
+  }
+  .header .content .block p {
+    text-align: center;
+  }
+  .header .content .block a {
+    margin: 0 auto;
+  }
+  .header .content .block img {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .header .content .block:nth-child(1) {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header .nav {
+    padding: 15px 20px;
+  }
+  .header .nav .logo span {
+    font-size: 25px;
+  }
+  .header .nav .logo img {
+    height: 25px;
+    margin-right: 8px;
+  }
+  .header .nav ul.active {
+    top: 58px;
+  }
+  .header .nav a.book {
+    width: 120px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+  }
+  .header .content .block h1 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+  .header .content .block img {
+    width: 80%;
+  }
+  .header .content-page {
+    padding-bottom: 0;
+  }
+  .header .content-page h1 {
+    font-size: 45px;
+    line-height: 60px;
   }
 }
 .food-menu {

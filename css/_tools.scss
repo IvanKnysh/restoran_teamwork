@@ -21,6 +21,7 @@ $dark: #0f172b;
 body {
 	font-family: "Heebo", sans-serif;
 	font-weight: 400;
+	overflow-x: hidden;
 }
 
 @mixin button($width, $height) {

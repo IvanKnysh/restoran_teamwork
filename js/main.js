@@ -72,3 +72,13 @@ document.addEventListener("DOMContentLoaded", function () {
 		mobile: false,
 	}).init();
 });
+
+// Nav menu button mobile
+document.querySelector(".header .nav button").addEventListener("click", () => {
+	document.querySelector(".header .nav ul").classList.toggle("active");
+});
+document.body.addEventListener("click", (e) => {
+	if (!e.target.closest(".nav")) {
+		document.querySelector(".header .nav ul").classList.remove("active");
+	}
+});
