@@ -345,6 +345,11 @@ body {
   height: 2px;
   background-color: #fea116;
 }
+@media screen and (max-width: 600px) {
+  .food-menu .container .food-menu-heading h2 {
+    font-size: 18px;
+  }
+}
 .food-menu .container .food-menu-heading h3 {
   text-align: center;
   font-size: 40px;
@@ -352,6 +357,11 @@ body {
   font-weight: 800;
   line-height: 48px;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 600px) {
+  .food-menu .container .food-menu-heading h3 {
+    font-size: 28px;
+  }
 }
 .food-menu .container .menu-tabs .tabs {
   width: -moz-fit-content;
@@ -497,6 +507,11 @@ body {
   height: 2px;
   background-color: #fea116;
 }
+@media screen and (max-width: 600px) {
+  .about-us .flx-wrapper .flx-item h2 {
+    font-size: 18px;
+  }
+}
 .about-us .flx-wrapper .flx-item h2:before {
   display: none;
 }
@@ -510,6 +525,11 @@ body {
   text-align: left;
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .about-us .flx-wrapper .flx-item h3 {
+    font-size: 28px;
+  }
 }
 .about-us .flx-wrapper .flx-item h3 img {
   display: block;
@@ -603,6 +623,36 @@ body {
   justify-content: flex-end;
 }
 
+@media screen and (max-width: 1260px) {
+  .about-us .flx-wrapper {
+    flex-direction: column;
+  }
+  .about-us .flx-wrapper .flx-item {
+    width: 70%;
+  }
+  .about-us .flx-wrapper .flx-item .gallery .gallery-row {
+    position: relative;
+  }
+  .about-us .flx-wrapper .flx-item .gallery .gallery-row a img.big {
+    max-width: 100%;
+    width: 60vw;
+  }
+  .about-us .flx-wrapper .flx-item .gallery .gallery-row a img.small {
+    max-width: 100%;
+    width: 40vw;
+  }
+  .about-us .flx-wrapper .flx-item .gallery .gallery-row:nth-child(1) {
+    right: 7vw;
+  }
+  .about-us .flx-wrapper .flx-item .gallery .gallery-row:nth-child(2) {
+    left: 6vw;
+  }
+}
+@media screen and (max-width: 960px) {
+  .about-us .flx-wrapper .flx-item {
+    width: 100%;
+  }
+}
 .booking {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -654,6 +704,11 @@ body {
   height: 2px;
   background-color: #fea116;
 }
+@media screen and (max-width: 600px) {
+  .booking .flx-wrapper .flx-item h2 {
+    font-size: 18px;
+  }
+}
 .booking .flx-wrapper .flx-item h2:before {
   display: none;
 }
@@ -667,6 +722,11 @@ body {
   color: #fff;
   text-align: left;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+  .booking .flx-wrapper .flx-item h3 {
+    font-size: 28px;
+  }
 }
 .booking .flx-wrapper .flx-item .flx-input-wrapper {
   display: flex;
@@ -781,6 +841,11 @@ body {
   height: 2px;
   background-color: #fea116;
 }
+@media screen and (max-width: 600px) {
+  .our-team .container .team-title .mb {
+    font-size: 18px;
+  }
+}
 .our-team .container .team-title .mb-sub {
   text-align: center;
   font-size: 40px;
@@ -788,6 +853,11 @@ body {
   font-weight: 800;
   line-height: 48px;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 600px) {
+  .our-team .container .team-title .mb-sub {
+    font-size: 28px;
+  }
 }
 .our-team .container .flx-team-wrapper {
   display: flex;
@@ -892,6 +962,11 @@ body {
   height: 2px;
   background-color: #fea116;
 }
+@media screen and (max-width: 600px) {
+  .contacts h2 {
+    font-size: 18px;
+  }
+}
 .contacts h3 {
   text-align: center;
   font-size: 40px;
@@ -899,6 +974,11 @@ body {
   font-weight: 800;
   line-height: 48px;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 600px) {
+  .contacts h3 {
+    font-size: 28px;
+  }
 }
 .contacts .flx-wrapper {
   display: flex;
@@ -937,6 +1017,11 @@ body {
   width: 50px;
   height: 2px;
   background-color: #fea116;
+}
+@media screen and (max-width: 600px) {
+  .contacts .flx-wrapper .flx-item h4 {
+    font-size: 18px;
+  }
 }
 .contacts .flx-wrapper .flx-item h4:before {
   display: none;
@@ -1062,6 +1147,11 @@ body {
   height: 2px;
   background-color: #fea116;
 }
+@media screen and (max-width: 600px) {
+  .services .title-wrap h2 {
+    font-size: 18px;
+  }
+}
 .services .title-wrap h3 {
   text-align: center;
   font-size: 40px;
@@ -1069,6 +1159,11 @@ body {
   font-weight: 800;
   line-height: 48px;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 600px) {
+  .services .title-wrap h3 {
+    font-size: 28px;
+  }
 }
 .services .row {
   display: flex;
