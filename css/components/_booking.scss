@@ -60,3 +60,43 @@
 		padding-top: 0;
 	}
 }
+
+@media screen and (max-width: 960px) {
+	.booking {
+		.flx-wrapper {
+			flex-direction: column;
+			.flx-item {
+				width: 100%;
+				&:nth-child(1) {
+					order: 2;
+				}
+				&:nth-child(2) {
+					order: 1;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.booking {
+		padding-top: 0;
+		padding-bottom: 0;
+		.container {
+			padding: 0;
+		}
+		.flx-wrapper {
+			.flx-item {
+				.flx-input-wrapper {
+					flex-direction: column;
+					.flx-input-item {
+						width: 100%;
+					}
+				}
+				&:nth-last-child(1) {
+					padding: 40px 20px;
+				}
+			}
+		}
+	}
+}

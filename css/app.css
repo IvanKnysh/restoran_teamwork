@@ -817,6 +817,38 @@ body {
   padding-top: 0;
 }
 
+@media screen and (max-width: 960px) {
+  .booking .flx-wrapper {
+    flex-direction: column;
+  }
+  .booking .flx-wrapper .flx-item {
+    width: 100%;
+  }
+  .booking .flx-wrapper .flx-item:nth-child(1) {
+    order: 2;
+  }
+  .booking .flx-wrapper .flx-item:nth-child(2) {
+    order: 1;
+  }
+}
+@media screen and (max-width: 600px) {
+  .booking {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .booking .container {
+    padding: 0;
+  }
+  .booking .flx-wrapper .flx-item .flx-input-wrapper {
+    flex-direction: column;
+  }
+  .booking .flx-wrapper .flx-item .flx-input-wrapper .flx-input-item {
+    width: 100%;
+  }
+  .booking .flx-wrapper .flx-item:nth-last-child(1) {
+    padding: 40px 20px;
+  }
+}
 .our-team {
   padding-top: 100px;
   padding-bottom: 100px;
