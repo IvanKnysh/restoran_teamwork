@@ -110,3 +110,31 @@
 		}
 	}
 }
+
+@media screen and (max-width: 960px) {
+	.footer {
+		.flx-wrapper {
+			flex-wrap: wrap;
+			.flx-item {
+				width: 50%;
+				margin-bottom: 40px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.footer {
+		padding-top: 50px;
+		padding-bottom: 80px;
+		.flx-wrapper {
+			flex-wrap: wrap;
+			.flx-item {
+				width: 100%;
+				&:nth-last-child(1) {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

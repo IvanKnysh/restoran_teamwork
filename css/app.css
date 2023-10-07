@@ -1276,6 +1276,30 @@ body {
   box-shadow: 0 0 0 0.25rem rgba(216, 137, 19, 0.5);
 }
 
+@media screen and (max-width: 960px) {
+  .footer .flx-wrapper {
+    flex-wrap: wrap;
+  }
+  .footer .flx-wrapper .flx-item {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+  .footer .flx-wrapper {
+    flex-wrap: wrap;
+  }
+  .footer .flx-wrapper .flx-item {
+    width: 100%;
+  }
+  .footer .flx-wrapper .flx-item:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+}
 .scroll-to-top {
   position: fixed;
   right: 20px;
