@@ -628,28 +628,42 @@ body {
     flex-direction: column;
   }
   .about-us .flx-wrapper .flx-item {
-    width: 70%;
+    width: 100%;
   }
-  .about-us .flx-wrapper .flx-item .gallery .gallery-row {
-    position: relative;
-  }
-  .about-us .flx-wrapper .flx-item .gallery .gallery-row a img.big {
-    max-width: 100%;
-    width: 60vw;
-  }
-  .about-us .flx-wrapper .flx-item .gallery .gallery-row a img.small {
-    max-width: 100%;
-    width: 40vw;
-  }
-  .about-us .flx-wrapper .flx-item .gallery .gallery-row:nth-child(1) {
-    right: 7vw;
-  }
-  .about-us .flx-wrapper .flx-item .gallery .gallery-row:nth-child(2) {
-    left: 6vw;
+  .about-us .flx-wrapper .flx-item .gallery {
+    max-width: 590px;
+    margin: auto;
   }
 }
 @media screen and (max-width: 960px) {
-  .about-us .flx-wrapper .flx-item {
+  .about-us .flx-wrapper .flx-item .gallery {
+    max-width: 550px;
+  }
+  .about-us .flx-wrapper .flx-item .gallery .gallery-row a img.big {
+    max-width: 265px;
+  }
+  .about-us .flx-wrapper .flx-item .gallery .gallery-row a img.small {
+    max-width: 190px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about-us .flx-wrapper .flx-item .gallery {
+    max-width: 335px;
+  }
+  .about-us .flx-wrapper .flx-item .gallery .gallery-row {
+    gap: 0 15px;
+    margin-bottom: 15px;
+  }
+  .about-us .flx-wrapper .flx-item .gallery .gallery-row a img.big {
+    max-width: 160px;
+  }
+  .about-us .flx-wrapper .flx-item .gallery .gallery-row a img.small {
+    max-width: 120px;
+  }
+  .about-us .flx-wrapper .flx-item .info {
+    flex-direction: column;
+  }
+  .about-us .flx-wrapper .flx-item .info .info-item {
     width: 100%;
   }
 }
