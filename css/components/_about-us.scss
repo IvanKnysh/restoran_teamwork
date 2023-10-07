@@ -112,6 +112,9 @@
 					max-width: 590px;
 					margin: auto;
 				}
+				&:nth-child(1) {
+					margin-bottom: 50px;
+				}
 			}
 		}
 	}
@@ -143,6 +146,8 @@
 
 @media screen and (max-width: 600px) {
 	.about-us {
+		padding-top: 50px;
+		padding-bottom: 50px;
 		.flx-wrapper {
 			.flx-item {
 				.gallery {

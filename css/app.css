@@ -667,6 +667,9 @@ body {
     max-width: 590px;
     margin: auto;
   }
+  .about-us .flx-wrapper .flx-item:nth-child(1) {
+    margin-bottom: 50px;
+  }
 }
 @media screen and (max-width: 960px) {
   .about-us .flx-wrapper .flx-item .gallery {
@@ -680,6 +683,10 @@ body {
   }
 }
 @media screen and (max-width: 600px) {
+  .about-us {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   .about-us .flx-wrapper .flx-item .gallery {
     max-width: 335px;
   }
