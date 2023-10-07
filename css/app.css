@@ -464,6 +464,37 @@ body {
   padding-top: 0;
 }
 
+@media screen and (max-width: 960px) {
+  .food-menu .container .menu-tabs .tabs-content .tab-item {
+    width: 100%;
+    flex-direction: column;
+  }
+  .food-menu .container .menu-tabs .tabs-content .tab-item .menu-item {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .food-menu {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .food-menu .container .menu-tabs .tabs {
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  .food-menu .container .menu-tabs .tabs li a {
+    gap: 10px;
+  }
+  .food-menu .container .menu-tabs .tabs li a .tabs-text {
+    font-size: 14px;
+  }
+  .food-menu .container .menu-tabs .tabs li a .tabs-text .secondary-text {
+    font-size: 12px;
+  }
+  .food-menu .container .menu-tabs .tabs-content .tab-item .menu-item {
+    gap: 15px;
+  }
+}
 .about-us {
   padding-top: 100px;
   padding-bottom: 100px;
