@@ -10,12 +10,18 @@
 	justify-content: center;
 	align-items: center;
 	transition: background-color 0.3s;
-	z-index: 10;
+	opacity: 0;
+	z-index: -1;
+	transition: 0.2s;
 	img {
 		display: block;
 		width: 12px;
 	}
 	&:hover {
 		background-color: $primary_hover;
+	}
+	&.scroll-active {
+		opacity: 1;
+		z-index: 10;
 	}
 }

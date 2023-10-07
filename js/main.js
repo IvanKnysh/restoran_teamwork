@@ -50,6 +50,16 @@ document.querySelectorAll(".food-menu .menu-tabs .tabs li").forEach((item) => {
 
 // Scroll to top button
 if (document.querySelector(".scroll-to-top")) {
+	window.addEventListener("scroll", () => {
+		if (window.scrollY > 100) {
+			document.querySelector(".scroll-to-top").classList.add("scroll-active");
+		} else {
+			document
+				.querySelector(".scroll-to-top")
+				.classList.remove("scroll-active");
+		}
+	});
+
 	document.querySelector(".scroll-to-top").addEventListener("click", (e) => {
 		e.preventDefault();
 
