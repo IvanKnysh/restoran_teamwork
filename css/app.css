@@ -1300,8 +1300,10 @@ body {
 }
 .services .row {
   display: flex;
-  padding: 20px 0;
   gap: 24px;
+}
+.services .row:last-child {
+  padding-top: 20px;
 }
 .services .row .col {
   padding: 40px 25px 25px;
@@ -1370,14 +1372,14 @@ body {
     justify-content: center;
     flex-wrap: wrap;
   }
-  .services .container .row:last-child {
-    padding-top: 5px;
-  }
   .services .container .row .col {
     width: 40%;
   }
 }
 @media screen and (max-width: 600px) {
+  .services {
+    padding: 50px 0;
+  }
   .services .container .row {
     flex-direction: column;
     align-items: center;

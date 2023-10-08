@@ -10,8 +10,10 @@
     }
     .row {
         display: flex;
-        padding: 20px 0;
         gap: 24px;
+        &:last-child {
+            padding-top: 20px;
+        }
         .col {
             padding: 40px 25px 25px;
             box-shadow: 0 0 45px rgba(0, 0, 0, .08);
@@ -88,9 +90,6 @@
             .row {
                 justify-content: center;
                 flex-wrap: wrap;
-                &:last-child {
-                    padding-top: 5px;
-                }
                 .col {
                     width: calc(100% / 2.5);
                 }
@@ -101,6 +100,7 @@
 
 @media screen and (max-width: 600px) {
     .services {
+        padding: 50px 0;
         .container {
             .row {
                 flex-direction: column;
