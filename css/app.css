@@ -1366,6 +1366,9 @@ body {
 .services .row .col:hover p {
   color: #fff;
 }
+.services.services-homepage {
+  padding-bottom: 0;
+}
 
 @media screen and (max-width: 960px) {
   .services .container .row {
