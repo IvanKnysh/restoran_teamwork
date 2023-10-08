@@ -707,6 +707,10 @@ body {
   .about-us .flx-wrapper .flx-item .info .info-item {
     width: 100%;
   }
+  .about-us.about-us-homepage {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 .booking {
   padding-top: 100px;
@@ -1300,10 +1304,12 @@ body {
 }
 .services .row {
   display: flex;
-  padding: 20px 0;
+  gap: 24px;
+}
+.services .row:nth-child(3n) {
+  padding-top: 20px;
 }
 .services .row .col {
-  margin: 0 12px;
   padding: 40px 25px 25px;
   box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
   transition: 0.5s;
@@ -1364,7 +1370,31 @@ body {
 .services .row .col:hover p {
   color: #fff;
 }
+.services.services-homepage {
+  padding-bottom: 0;
+}
 
+@media screen and (max-width: 960px) {
+  .services .container .row {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .services .container .row .col {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .services {
+    padding: 50px 0;
+  }
+  .services .container .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services .container .row .col {
+    width: 100%;
+  }
+}
 .footer {
   background-color: #0f172b;
   padding-top: 80px;

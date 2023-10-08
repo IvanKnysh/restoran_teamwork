@@ -10,9 +10,11 @@
     }
     .row {
         display: flex;
-        padding: 20px 0;
+        gap: 24px;
+        &:nth-child(3n) {
+            padding-top: 20px;
+        }
         .col {
-            margin: 0 12px;
             padding: 40px 25px 25px;
             box-shadow: 0 0 45px rgba(0, 0, 0, .08);
             transition: .5s;
@@ -76,6 +78,38 @@
                 }
                 p {
                     color: $light;
+                }
+            }
+        }
+    }
+    &.services-homepage {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .services {
+        .container {
+            .row {
+                justify-content: center;
+                flex-wrap: wrap;
+                .col {
+                    width: calc(100% / 2.5);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .services {
+        padding: 50px 0;
+        .container {
+            .row {
+                flex-direction: column;
+                align-items: center;
+                .col {
+                    width: 100%;
                 }
             }
         }
