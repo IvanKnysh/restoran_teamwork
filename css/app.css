@@ -707,6 +707,10 @@ body {
   .about-us .flx-wrapper .flx-item .info .info-item {
     width: 100%;
   }
+  .about-us.about-us-homepage {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 .booking {
   padding-top: 100px;
