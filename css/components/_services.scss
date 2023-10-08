@@ -11,8 +11,8 @@
     .row {
         display: flex;
         padding: 20px 0;
+        gap: 24px;
         .col {
-            margin: 0 12px;
             padding: 40px 25px 25px;
             box-shadow: 0 0 45px rgba(0, 0, 0, .08);
             transition: .5s;
@@ -92,11 +92,7 @@
                     padding-top: 5px;
                 }
                 .col {
-                    margin-bottom: 25px;
                     width: calc(100% / 2.5);
-                    &:nth-last-child(-n + 2) {
-                        margin-bottom: 0;
-                    }
                 }
             }
         }
@@ -111,12 +107,6 @@
                 align-items: center;
                 .col {
                     width: 100%;
-                    &:nth-last-child(-n + 2) {
-                        margin-bottom: 25px;
-                        &:last-child {
-                            margin-bottom: 0;
-                        }
-                    }
                 }
             }
         }
