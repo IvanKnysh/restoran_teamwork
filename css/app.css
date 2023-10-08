@@ -1365,6 +1365,22 @@ body {
   color: #fff;
 }
 
+@media screen and (max-width: 960px) {
+  .services .container .row {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .services .container .row:last-child {
+    padding-top: 5px;
+  }
+  .services .container .row .col {
+    margin-bottom: 25px;
+    width: 33.3333333333%;
+  }
+  .services .container .row .col:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}
 .footer {
   background-color: #0f172b;
   padding-top: 80px;
