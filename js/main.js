@@ -92,3 +92,7 @@ document.body.addEventListener("click", (e) => {
 		document.querySelector(".header .nav ul").classList.remove("active");
 	}
 });
+
+// Date time value
+const datetime = new Date().toLocaleString();
+document.querySelector("input[type=datetime-local]").value = datetime;
