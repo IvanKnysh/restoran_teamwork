@@ -1381,6 +1381,21 @@ body {
     margin-bottom: 0;
   }
 }
+@media screen and (max-width: 600px) {
+  .services .container .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services .container .row .col {
+    width: 50%;
+  }
+  .services .container .row .col:nth-last-child(-n+2) {
+    margin-bottom: 25px;
+  }
+  .services .container .row .col:nth-last-child(-n+2):last-child {
+    margin-bottom: 0;
+  }
+}
 .footer {
   background-color: #0f172b;
   padding-top: 80px;
