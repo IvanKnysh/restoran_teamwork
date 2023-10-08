@@ -885,7 +885,7 @@ body {
     flex-direction: column;
   }
   .booking .flx-wrapper .flx-item .flx-input-wrapper .flx-input-item {
-    width: 100% !important;
+    width: 100%;
   }
   .booking .flx-wrapper .flx-item:nth-last-child(1) {
     padding: 40px 20px;
