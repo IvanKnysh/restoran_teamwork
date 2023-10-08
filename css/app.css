@@ -1375,7 +1375,7 @@ body {
   }
   .services .container .row .col {
     margin-bottom: 25px;
-    width: 33.3333333333%;
+    width: 40%;
   }
   .services .container .row .col:nth-last-child(-n+2) {
     margin-bottom: 0;
@@ -1387,7 +1387,7 @@ body {
     align-items: center;
   }
   .services .container .row .col {
-    width: 50%;
+    width: 100%;
   }
   .services .container .row .col:nth-last-child(-n+2) {
     margin-bottom: 25px;
