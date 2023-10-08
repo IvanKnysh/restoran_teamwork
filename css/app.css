@@ -803,8 +803,9 @@ body {
   font-family: "Heebo", sans-serif;
   box-sizing: border-box;
   transition: 0.3s;
-  margin-bottom: 14px;
   color: #0f172b;
+  background-color: #fff;
+  margin-bottom: 14px;
 }
 .booking .flx-wrapper .flx-item input:focus,
 .booking .flx-wrapper .flx-item select:focus {
