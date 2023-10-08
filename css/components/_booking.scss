@@ -38,6 +38,7 @@
 			select {
 				@include input(100%, 58px);
 				margin-bottom: 14px;
+				color: $dark;
 			}
 			textarea {
 				@include input(100%, 100px);
