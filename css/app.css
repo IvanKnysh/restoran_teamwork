@@ -304,6 +304,7 @@ body {
   }
   .header .content .block img {
     width: 80%;
+    animation: initial;
   }
   .header .content-page {
     padding-bottom: 0;
