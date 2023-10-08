@@ -962,7 +962,7 @@ body {
 }
 .our-team .container .flx-team-wrapper .flx-team-item .team-item-content {
   box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
-  height: calc(100% - 50px);
+  height: calc(100% - 55px);
   transition: 0.5s;
   border-radius: 2px;
   text-align: center;
@@ -991,8 +991,8 @@ body {
   color: #0F172B;
 }
 .our-team .container .flx-team-wrapper .flx-team-item .team-item-content .small {
-  font-size: 12px;
-  padding-bottom: 10px;
+  font-size: 14px;
+  padding-bottom: 20px;
 }
 .our-team .container .flx-team-wrapper .flx-team-item .team-item-content .flx-sm {
   padding: 10px;
@@ -1020,6 +1020,27 @@ body {
   transform: scale(1.2);
 }
 
+@media screen and (max-width: 960px) {
+  .our-team .container .flx-team-wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .our-team .container .flx-team-wrapper .flx-team-item {
+    width: 45.4545454545%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .our-team {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .our-team .container .flx-team-wrapper {
+    gap: 15px;
+  }
+  .our-team .container .flx-team-wrapper .flx-team-item {
+    width: 100%;
+  }
+}
 .contacts {
   padding-top: 100px;
   padding-bottom: 100px;
