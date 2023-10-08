@@ -1302,7 +1302,7 @@ body {
   display: flex;
   gap: 24px;
 }
-.services .row:last-child {
+.services .row:nth-child(3n) {
   padding-top: 20px;
 }
 .services .row .col {
