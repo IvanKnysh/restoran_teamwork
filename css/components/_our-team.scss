@@ -63,25 +63,20 @@
                         padding-bottom: 20px;
 
                     }
-
-                    .flx-sm {
-                        padding: 10px;
-                        border-radius: 10px;
-                        padding-bottom: 0;
-                        margin-bottom: -7px;
-                    }
-
-                    .flx-sm img {
-                        width: 40px;
-                        border-radius: 38px 38px 0 0;
-                        background-color: orange;
-                        margin: 3px;
-                        margin-bottom: 0;
-                        padding: 10px;
-                    }
-
+                    
                     .ln-social-media {
+                        display: inline-block;
+                        border-radius: 38px 38px 0 0;
+                        overflow: hidden; 
+                        margin: 3px;
+                        margin-bottom: -15px;
+                    }
+                    
+                    .ln-social-media img {
+                        background-color: orange;
+                        width: 40px;
                         margin-bottom: 0;
+                        padding: 10px;
                     }
 
                     &:hover {
