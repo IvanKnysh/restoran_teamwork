@@ -60,6 +60,7 @@
 	}
 	&.booking-homepage {
 		padding-top: 0;
+		padding-bottom: 0;
 	}
 }
 
@@ -99,6 +100,9 @@
 					padding: 40px 20px;
 				}
 			}
+		}
+		&.booking-homepage {
+			padding-bottom: 20px;
 		}
 	}
 }
