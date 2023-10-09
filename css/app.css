@@ -1327,9 +1327,6 @@ body {
   display: flex;
   gap: 24px;
 }
-.services .row:nth-child(3n) {
-  padding-top: 20px;
-}
 .services .row .col {
   padding: 40px 25px 25px;
   box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
