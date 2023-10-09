@@ -12,7 +12,7 @@
         display: flex;
         gap: 24px;
         .col {
-            width: 310px;
+            width: calc(100% / 4);
             padding: 40px 25px 25px;
             box-shadow: 0 0 45px rgba(0, 0, 0, .08);
             transition: .5s;
