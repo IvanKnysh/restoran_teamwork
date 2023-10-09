@@ -862,6 +862,7 @@ body {
 }
 .booking.booking-homepage {
   padding-top: 0;
+  padding-bottom: 0;
 }
 
 @media screen and (max-width: 960px) {
@@ -894,6 +895,9 @@ body {
   }
   .booking .flx-wrapper .flx-item:nth-last-child(1) {
     padding: 40px 20px;
+  }
+  .booking.booking-homepage {
+    padding-bottom: 20px;
   }
 }
 .our-team {
